@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="style.css" />
+        <title>Leixlip Confey Train Times</title>
+    </head>
+    <body>
+        <h1 id="title">Leixlip Confey Train Times</h1>
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>Due In</th>
+                    <th>Departs</th>
+                    <th>Arrival</th>
+                    <th>Origin</th>
+                    <th>Destination</th>
+                </tr>
+            </thead>
+            <tbody id="tData"></tbody>
+        </table>
+        <select id="station" name="station" onchange="update()">
+            <option value="LXCON" selected>Leixlip (Confey)</option>
+            <option value="MYNTH">Maynooth</option>
+            <option value="ASHTN">Ashtown</option>
+        </select>
+    </body>
+</html>
